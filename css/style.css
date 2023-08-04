@@ -19,3 +19,7 @@ body {
 #mobile-nav-items a {
     color: #C2C5AA
 }
+
+h1, h2 {
+    text-align: center;
+}

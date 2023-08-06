@@ -2,6 +2,25 @@
 /* Mobile Navigation */
 body {
     background-color: #333D29;
+    box-sizing: border-box;
+}
+
+.col-sm-2 {
+    grid-column: span 2;
+}
+
+.col-md-6 {
+    grid-column: span 6
+}
+
+.col-lg-12 {
+    grid-column: span 12;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
 }
 
 .main-nav {
@@ -20,6 +39,29 @@ body {
     color: #C2C5AA
 }
 
-h1, h2 {
+.featured {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border: 2px solid #C2C5AA;
+    border-radius: 5px;
+    width: 250px;
+    margin: 0;
+}
+
+.card h3, .card p {
     text-align: center;
+}
+
+.card img {
+    object-fit: contain;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
 }
